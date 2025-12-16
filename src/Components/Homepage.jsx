@@ -1,9 +1,9 @@
 import React from "react";
-import Home from "../Pic/Gif.png";
+import Home from "../Pic/Gif.png"; // Assuming this path is correct
 
 const Homepage = () => {
   const handleExploreClick = () => {
-    // This function scrolls the user to the next section (where Places.jsx is assumed to start)
+    // This function scrolls the user to the next section, identified by the ID in the Places component
     const section = document.getElementById("scroll-explore-helper");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -14,7 +14,7 @@ const Homepage = () => {
     // Background gradient for soft look
     <div className="bg-gradient-to-br from-sky-200 via-sky-300 to-blue-400 min-h-screen flex flex-col md:flex-row items-center px-6 md:px-20 py-20">
       
-      {/* LEFT SIDE TEXT CONTAINER (1. Visual Depth: Blurred Card) */}
+      {/* LEFT SIDE TEXT CONTAINER */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-12 md:mb-0">
           <div className="p-6 sm:p-8 md:p-10 bg-white/40 backdrop-blur-sm rounded-2xl shadow-2xl w-full max-w-lg text-center md:text-left">
             
@@ -30,7 +30,7 @@ const Homepage = () => {
               Your comprehensive guide to help Plan, Explore, and track your travels.
             </h2>
 
-            {/* 2. Usability: Clearer CTA with Icon */}
+            {/* CTA Button */}
             <button
               onClick={handleExploreClick}
               className="mt-6 px-8 py-3 bg-blue-600 text-white rounded-full shadow-xl hover:bg-blue-700 transition transform hover:scale-105 duration-300 font-semibold inline-flex items-center justify-center gap-2"
@@ -45,8 +45,6 @@ const Homepage = () => {
         <img
           src={Home}
           alt="Illustration of world exploration"
-          // 3. Accessibility & Balance: Added thick white border
-          // Added custom animation and RWD sizing
           className="w-full max-w-xs sm:max-w-md h-auto rounded-full shadow-2xl border-4 border-white transition duration-500 hover:rotate-2 animate-pulse-slow"
         />
       </div>

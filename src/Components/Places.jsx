@@ -406,10 +406,14 @@ const Places = () => {
   );
 
   /* =========================
-      UI
+     UI
   ========================= */
   return (
-    <div className="min-h-screen bg-gradient-to-r from-sky-200 to-blue-400 p-6 flex flex-col items-center">
+    // FIX APPLIED: Added id="scroll-explore-helper" to link with Homepage button
+    <div 
+      id="scroll-explore-helper" 
+      className="min-h-screen bg-gradient-to-r from-sky-200 to-blue-400 p-6 flex flex-col items-center"
+    >
       <h1 className="text-4xl font-bold text-sky-900 mb-6">
         📍 Explore Your Places
       </h1>
